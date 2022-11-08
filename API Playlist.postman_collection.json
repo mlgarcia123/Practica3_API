@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "b052439b-10f9-4dcf-ac97-9bc0d88f3275",
+		"name": "API Playlist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24224361"
+	},
+	"item": [
+		{
+			"name": "GET Cantante",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/1/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cantante (no exist)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Canciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/1/canciones/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"1",
+						"canciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cancion (no existe)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/1/canciones/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"1",
+						"canciones",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cancion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/1/canciones/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"1",
+						"canciones",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cancion sin nombre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"Estreno\": 2005\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:{{portNumber}}/api/cantantes/1/canciones",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{portNumber}}",
+					"path": [
+						"api",
+						"cantantes",
+						"1",
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cancion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Pon de Replay\",\r\n    \"Estreno\": 2005\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:{{portNumber}}/api/cantantes/1/canciones",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{portNumber}}",
+					"path": [
+						"api",
+						"cantantes",
+						"1",
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Cancion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"Run the World\",\r\n    \"estreno\": 2012\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/2/canciones/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"2",
+						"canciones",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Cancion Animals",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/name\",\r\n        \"value\": \"Updated Animals\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/3/canciones/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"3",
+						"canciones",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Cancion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes/3/canciones/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes",
+						"3",
+						"canciones",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes?name=Rihanna",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Rihanna"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cantante paged",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7256/api/cantantes?pageSize=1&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"cantantes"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "1"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
