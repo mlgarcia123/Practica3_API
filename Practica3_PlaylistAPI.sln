@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3_PlaylistAPI", "Practica3_PlaylistAPI\Practica3_PlaylistAPI.csproj", "{65FA578C-52F0-4037-A409-8BEE836CF664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practica3_PlaylistAPI", "Practica3_PlaylistAPI\Practica3_PlaylistAPI.csproj", "{65FA578C-52F0-4037-A409-8BEE836CF664}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPlaylistAPI", "TestPlaylistAPI\TestPlaylistAPI.csproj", "{E113AF39-4692-48E4-9313-E8CEE4951953}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{65FA578C-52F0-4037-A409-8BEE836CF664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65FA578C-52F0-4037-A409-8BEE836CF664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65FA578C-52F0-4037-A409-8BEE836CF664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E113AF39-4692-48E4-9313-E8CEE4951953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E113AF39-4692-48E4-9313-E8CEE4951953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E113AF39-4692-48E4-9313-E8CEE4951953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E113AF39-4692-48E4-9313-E8CEE4951953}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
